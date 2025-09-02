@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Jennas Recipe Book</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--   bootstrap   -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/recipespage/recipes.css" />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script async src="https://imgbb.com/upload.js" data-palette="blue" data-auto-insert="bbcode-embed-medium"></script>
+
+    
+    <!-- Icons: make sure is the last one -->
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand merienda-font"
+          href="/index.html"
+          style="color: #03a791"
+          >Jenna's Recipe Book</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link montserrat-font underline"
+                style="font-weight: bold"
+                aria-current="page"
+                href="/index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link montserrat-font underline"
+                style="font-weight: bold"
+                href="/aboutpage/about.html"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link montserrat-font underline"
+                style="font-weight: bold"
+                href="/recipespage/recipes.html"
+                >Recipes</a
+              >
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header id="header">
+      <canvas id="canvas" width="800" height="270">Jenna's Recipes </canvas>
+      <h1 class="merienda-font">
+        Discover Jenna's Recipe Generator!
+      </h1>
+      <p class="montserrat-font">
+        Where Passion Meets Flavor. Recipes On Demand
+      </p>
+    </header>
+
+    <!-- Main Intro section -->
+    <section class="main" id="intro">
+      <div class="main-section">
+        
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-6">
+              <h1 class="merienda-font">Unlock inspiration at the click of a button!</h1>
+              <h6 class="montserrat-font">
+                Jenna empowers you to create something new. Whether you are seeking a fresh idea or you are feeling adventurous, Jenna's Recipe Generator makes it easy to turn what's in your pantry into a delicious masterpiece.
+              </h6>              
+            </div>
+            
+            <div class="col-md-6">
+              <img src="https://cdn.glitch.global/7a3d34ae-865f-4178-a0e7-ebdc11372e10/20240905_new-yorker_all-recipes_animation_final%20(1).gif?v=1746660560009" border="0">  
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Food section-->
+    <section id="food">
+      <div class="py-5">
+        <h3>
+          Simply select three ingredients you have on hand and discover a delicious variety of dish options you can make today.
+        </h3>
+        <input class="ing1" placeholder="Enter Ingredient" />
+        <input class="ing2" placeholder="Enter Ingredient" />
+        <input class="ing3" placeholder="Enter Ingredient" />
+        <!-- Input Group to type in the pokemon   -->
+        <button
+          type="searchButton"
+          onclick="foodSearch()"
+          class="btn btn-food"
+        >
+          Search
+        </button>
+      </div>
+    
+      <div class="title montserrat-font" id="title">
+        <h1 id="error"></h1>
+      </div>
+
+      <div id="cardsContainer"></div>
+    </section>
+
+    <!-- Footer Section -->
+    <section id="footer" class="d-flex align-items-center text-white py-5">
+      <div class="container">
+        <div class="row">
+          
+          <div id="contact" class="col-md-4">
+            <h4 style="padding-bottom: 1rem;">Contact Jenna</h4>
+            <div class="display-flex">
+              <i class="fi-xwluxl-map-marker-wide icon-footer"></i>
+              <p>123 Recipe Lane, Flavor Town, FT 54321</p>
+            </div>
+            
+            <div class="display-flex">
+              <i class="fi-xwlrxl-phone-wide icon-footer"></i>
+              <p>Phone: (123) 456-7890</p>
+            </div>
+            
+            <div class="display-flex">
+              <i class="fi-xwluxl-envelope-wide icon-footer"></i>
+              <p>Email: jenna@recipes.com</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <h4 style="padding-bottom: 1rem;">Newsletter</h4>
+              <form action="https://formspree.io/f/xkgrndkz" method="POST">
+                <div class="mb-3">
+                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                <textarea name="message" class="form-control" placeholder="Optional message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-footer">Subscribe</button>
+              </form>
+          </div>
+        
+          <div class="col-md-4" style="padding-left: 1.5rem;">
+            <h4 style="padding-bottom: 1rem;">Follow Jenna</h4>
+            <a href="https://www.instagram.com/best.recipes122/" class="text-white me-3"><i class="fi-xnsuxl-instagram icon-sm"></i></a>
+            <a href="https://www.facebook.com/" class="text-white me-3"><i class="fi-snsuxl-facebook icon-sm"></i></a>
+            <a href="https://www.pinterest.com/ideas/" class="text-white"><i class="fi-xnsuxl-pinterest icon-sm"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <!-- icons -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="recipes.js"></script>
+  </body>
+</html>

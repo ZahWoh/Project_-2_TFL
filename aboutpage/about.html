@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Jennas Recipe Book</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/aboutpage/about.css" />
+
+    <!-- JavaScript -->
+    <script src="/aboutpage/about.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <!-- Icons -->
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    
+    <!-- Nav Bar -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand merienda-font" href="/index.html" style="color: #03A791;">Jenna's Recipe Book</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link montserrat-font underline" style="font-weight: bold;" aria-current="page" href="/index.html">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link montserrat-font underline" style="font-weight: bold;" href="/aboutpage/about.html">About</a>
+        </li>
+        
+        <li class="nav-item">
+           <a class="nav-link montserrat-font underline" style="font-weight: bold;" href="/recipespage/recipes.html">Recipes</a>
+        </li>
+      </ul>
+      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>     
+
+    <!-- Header Section -->
+    <header id="header-about">
+      <canvas id="canvas" width="800" height="270"
+        >Jenna's Kitchen
+      </canvas>
+    
+      <h1 class="merienda-font">
+        More About Jenna's Recipe Book
+      </h1>
+      <p class="montserrat-font">
+        Delicious Recipes, Made With Love!
+      </p>
+    </header>
+  
+    <!-- Jenna's Photo & History Section -->
+    <section id="jenna" style="padding-top: 2rem;" >
+      <div class="container py-5">
+        <div class="row align-items-center jenna-layout">
+          
+          <div class="col-md-4">
+            <img
+              src="https://cdn.glitch.global/7a3d34ae-865f-4178-a0e7-ebdc11372e10/Screenshot_3.png?v=1746137820127"
+              class="img-fluid rounded-circle jennaHs"
+              alt="Jenna"
+            />
+          </div>
+          
+          <div class="col-md-8 text">
+            <h1 class="merienda-font moving-title">Meet Jenna</h1>
+            <p class="montserrat-font">
+              Jenna started this website as a way to share her passion for cooking with the world. After years of collecting family recipes and creating new ones in her home kitchen, she realized she needed a space to organize and showcase her favorites. This website is her digital cookbook, where every recipe comes with a story and a whole lot of flavor.
+            </p>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- Favorite Recipes Section -->
+    <section id="favorites">
+      <h1 class="text-center moving-title merienda-font">Jenna's Favorite Recipes</h1>
+      <h4 class="montserrat-font">
+        Get to know Jenna's good taste and discover her favorite recipes.
+      </h4>
+      <div class="container py-5">
+        <div class="row g-4" style="padding-bottom: 3rem;">
+          
+          <!-- Recipe 1 -->
+          <div id="card-1" class="col-md-3 col-sm-6">
+            <a href="https://www.allrecipes.com/recipe/11973/spaghetti-carbonara-ii/" class="text-decoration-none text-dark" target="_blank">
+              <div class="card card-favorites h-100">
+                <img
+                  src="https://cdn.glitch.global/7a3d34ae-865f-4178-a0e7-ebdc11372e10/109396.avif?v=1745534660178"
+                  class="card-img-top recipe-img"
+                  alt="Spaghetti Carbonara"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Spaghetti Carbonara</h5>
+                  <p class="card-text">
+                  A creamy pasta classic with pancetta and parmesan. Click to see the full recipe.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Recipe 2 -->
+          <div id="card-2" class="col-md-3 col-sm-6">
+            <a href="https://www.allrecipes.com/recipe/20384/tart-lemon-triangles/" class="text-decoration-none text-dark" target="_blank">
+              <div class="card card-favorites h-100">
+                <img
+                  src="https://cdn.glitch.global/7a3d34ae-865f-4178-a0e7-ebdc11372e10/emon-Tart.jpg?v=1745534531143"
+                  class="card-img-top recipe-img"
+                  alt="Lemon Tart"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lemon Tart</h5>
+                  <p class="card-text">
+                    Tangy, sweet, and perfect for dessert lovers. Click to see the full recipe.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        <!-- Recipe 3 -->
+        <div id="card-3" class="col-md-3 col-sm-6">
+          <a href="https://www.allrecipes.com/recipe/22469/barbecue-ribs/" class="text-decoration-none text-dark" target="_blank">
+            <div class="card card-favorites h-100">
+              <img
+                src="https://cdn.glitch.global/7a3d34ae-865f-4178-a0e7-ebdc11372e10/BBQ.jpg?v=1746295617845"
+                class="card-img-top recipe-img"
+                alt="BBQ Ribs"
+              />
+              <div class="card-body">
+                <h5 class="card-title">BBQ Ribs</h5>
+                <p class="card-text">
+                  Juicy, smoky ribs that fall off the bone. Click to view this crowd-pleaser.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+          
+        <!-- Recipe 4 -->
+        <div id="card-4" class="col-md-3 col-sm-6">
+        <a href ="https://www.barleyandsage.com/buttermilk-fried-chicken-tenders/" class="text-decoration-none text-dark" target="_blank"> 
+          <div class="card card-favorites h-100">
+          <img 
+              src= "https://thetablediaries.com/wp-content/uploads/2020/12/chicken-tender-recipe-card.jpg"
+               class = "card-img-top recipe-img"
+               alt =" Buttermilk Chicken Tenders"
+               />
+          <div class="card-body">
+                <h5 class="card-title"> Buttermilk Chicken Tenders</h5>
+                <p class="card-text">
+                 These buttermilk fried chicken tenders are crispy outside and juicy inside. Click to view this recipe.
+                </p>
+              </div>
+          </div>
+          </a>
+        </div>
+          
+        <!-- Recipe 5 -->
+          <div id="card-5" class="col-md-3 col-sm-6">
+            <a href="https://www.allrecipes.com/recipe/20338/strawberry-pretzel-salad/" class="text-decoration-none text-dark" target="_blank">
+              <div class="card card-favorites h-100">
+                <img
+                  src="https://cdn.glitch.global/7a3d34ae-865f-4178-a0e7-ebdc11372e10/IMG_6057.jpeg?v=1746684986880"
+                  class="card-img-top recipe-img"
+                  alt="Strawberry Pretzel Salad"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Strawberry Pretzel Salad</h5>
+                  <p class="card-text">
+                  This strawberry pretzel salad recipe is perfect for fans of the sweet and salty flavor pairing. Click to view this recipe.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Recipe 6-->
+          <div id="card-6" class="col-md-3 col-sm-6">
+            <a href="https://www.allrecipes.com/recipe/172704/chinese-pepper-steak/" class="text-decoration-none text-dark" target="_blank">
+              <div class="card card-favorites h-100">
+                <img
+                  src="https://cdn.glitch.global/7a3d34ae-865f-4178-a0e7-ebdc11372e10/IMG_6058.jpeg?v=1746685271417"
+                  class="card-img-top recipe-img"
+                  alt="Chinese Pepper Steak"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Chinese Pepper Steak</h5>
+                  <p class="card-text">
+                  A delicious pepper steak recipe served with boiled white rice. Click to view this recipe.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+        <!-- Recipe 7 -->
+          <div id="card-7" class="col-md-3 col-sm-6">
+            <a href="https://www.allrecipes.com/recipe/13024/italian-wedding-soup-i/" class="text-decoration-none text-dark" target="_blank">
+              <div class="card card-favorites h-100">
+                <img
+                  src="https://cdn.glitch.global/7a3d34ae-865f-4178-a0e7-ebdc11372e10/IMG_6059.jpeg?v=1746685974389"
+                  class="card-img-top recipe-img"
+                  alt="Italian Wedding Soup"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Italian Wedding Soup</h5>
+                  <p class="card-text">
+                  This Italian wedding soup is a combination of homemade meatballs with sliced escarole, carrots, and orzo pasta in a lovely flavorsome broth. Click to view this recipe.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Recipe 8 -->
+          <div id="card-8" class="col-md-3 col-sm-6">
+            <a href="https://www.allrecipes.com/recipe/269394/pistachio-crusted-salmon/" class="text-decoration-none text-dark" target="_blank">
+              <div class="card card-favorites h-100">
+                <img
+                  src="https://cdn.glitch.global/7a3d34ae-865f-4178-a0e7-ebdc11372e10/IMG_6060.jpeg?v=1746686223816"
+                  class="card-img-top recipe-img"
+                  alt="Pistachio-Crusted Salmon"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pistachio-Crusted Salmon</h5>
+                  <p class="card-text">
+                  This pistachio-crusted salmon recipe makes ordinary salmon extra special by topping it with a flavorful crust. Click to view this recipe.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section id="footer" class="d-flex align-items-center text-white py-5">
+      <div class="container">
+        <div class="row">
+          
+          <div id="contact" class="col-md-4">
+            <h4 style="padding-bottom: 1rem;">Contact Jenna</h4>
+            <div class="display-flex">
+              <i class="fi-xwluxl-map-marker-wide icon-footer"></i>
+              <p>123 Recipe Lane, Flavor Town, FT 54321</p>
+            </div>
+            
+            <div class="display-flex">
+              <i class="fi-xwlrxl-phone-wide icon-footer"></i>
+              <p>Phone: (123) 456-7890</p>
+            </div>
+            
+            <div class="display-flex">
+              <i class="fi-xwluxl-envelope-wide icon-footer"></i>
+              <p>Email: jenna@recipes.com</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <h4 style="padding-bottom: 1rem;">Newsletter</h4>
+              <form action="https://formspree.io/f/xkgrndkz" method="POST">
+                <div class="mb-3">
+                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                <textarea name="message" class="form-control" placeholder="Optional message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-footer">Subscribe</button>
+              </form>
+          </div>
+        
+          <div class="col-md-4" style="padding-left: 1.5rem;">
+            <h4 style="padding-bottom: 1rem;">Follow Jenna</h4>
+            <a href="https://www.instagram.com/best.recipes122/" class="text-white me-3"><i class="fi-xnsuxl-instagram icon-sm"></i></a>
+            <a href="https://www.facebook.com/" class="text-white me-3"><i class="fi-snsuxl-facebook icon-sm"></i></a>
+            <a href="https://www.pinterest.com/ideas/" class="text-white"><i class="fi-xnsuxl-pinterest icon-sm"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/aboutpage/about.js" defer></script>
+  </body>
+</html>

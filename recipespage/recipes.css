@@ -1,0 +1,189 @@
+/* Color Palette */
+/* orange: c=F1BA88 */
+/* light yellow/green (lightest color): E9F5BE */
+/* light green: 81E7AF */
+/* green (darkest color): 03A791 */
+
+/* * {
+  border: 2px solid red;
+  margin: 0px;
+  padding: 0px;
+} */
+
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%; 
+}
+
+#header {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+#header h1 {
+  padding-top: 2.7rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+#header p {
+  font-size: 2rem;
+}
+
+section#intro {
+  background-color: #81E7AF;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align:center;
+}
+
+section#intro img {
+  max-width: 300px;
+  height: 300px;
+  padding-right: 1rem;
+}
+
+section#intro h1 {
+  font-weight: none;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+section#intro h6 {
+  font-size: 22px;
+  padding-left: 1rem;
+}
+
+section#food {
+  padding: 2rem;
+  padding-bottom: 5rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+section#food h3 {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding-bottom: 20px;
+}
+
+section#footer h4 {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+section#footer div {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+section#footer p {
+  font-size: 18px;
+}
+
+.icon-footer {
+  font-size: 25px; 
+  padding-right: 10px;
+}
+
+.icon-sm {
+  font-size: 35px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.btn-food {
+  background-color: #03A791;
+  color: white;
+}
+
+.btn-food:hover {
+  background-color: #027868;
+  color: white;
+  font-weight: bold;
+}
+
+.underline:hover {
+  text-decoration: underline;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.btn-footer {
+  background-color: lightblue !important;
+  color: white;
+}
+
+.btn-footer:hover {
+  background-color: #3692b0 !important;
+  color: white;
+}
+
+.merienda-font {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.margin{
+   margin:0
+}
+
+/* .margin {
+  border: 20px;
+} */
+
+/* .recipes {
+  text-align:center;
+} */
+
+#footer {
+  background-color: #F1BA88;
+}
+
+.title{
+  text-align: center;
+}
+
+/* the list js api */
+
+.list{
+  color: blue;
+}
+
+.dish-name{
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 20px
+}
+
+.missing{
+  font-weight: bold;
+  margin:0px;
+  padding: 0px
+}
+
+li{
+   margin:0px;
+  padding: 0px;
+}

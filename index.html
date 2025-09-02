@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Jenna's Recipe Book</title>
+
+    <!-- jquire  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    <!-- Google Fonts -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script async src="https://imgbb.com/upload.js" data-palette="blue" data-auto-insert="bbcode-embed-medium"></script>
+
+    <!-- Icons: make sure is the last one -->    
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+  </head>
+  <body>
+    
+    <!-- Nav Bar -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand merienda-font" href="index.html" style="color: #03A791;">Jenna's Recipe Book</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link montserrat-font underline" style="font-weight: bold;" aria-current="page" href="/index.html">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link montserrat-font underline" style="font-weight: bold;" href="/aboutpage/about.html">About</a>
+        </li>
+        
+        <li class="nav-item">
+           <a class="nav-link montserrat-font underline" style="font-weight: bold;" href="/recipespage/recipes.html">Recipes</a>
+        </li>
+      </ul>
+      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn " type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>     
+    
+    <!-- Header  -->
+  <header id="header">
+    <canvas id="canvas" width="800" height="300"
+      >Jenna's Kitchen
+    </canvas>
+    
+    <h1 class="merienda-font">
+      Welcome To Jenna's Recipe Book!
+    </h1>
+    <p class="montserrat-font">
+      The Perfect Place For Passionate Cooks! Start Your Journey In The Kitchen!
+    </p>
+  </header>
+    
+    <!-- Purpose Section MARIA -->
+  <section id="purpose">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-6">
+          <a href="https://imgbb.com/"><img src="https://i.ibb.co/vy4nstk/cooking-for-newsletter-ver-1.gif" alt="cooking-for-newsletter-ver-1" border="0"></a>
+          <!-- Image -->
+        </div>
+        
+        <div class="col-md-6">
+          <h1 style="padding-bottom: 7px;" class="merienda-font">Purpose</h1>
+          <p class="montserrat-font">
+            The purpose of Jenna’s Recipe Book is to inspire home cooks by sharing Jenna’s favorite homemade dishes and fostering creativity in the kitchen. The site serves as a personal showcase for Jenna’s culinary art, providing a space where she can display her best recipes and connect with others who share her love for cooking.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+    
+    <!-- Values Section -->
+  <section id="values">
+    <h1 class="merienda-font">
+      Values
+    </h1>
+    <p class="montserrat-font">
+      Jenna’s cooking journey is rooted in authenticity, creativity, and a genuine passion for sharing food experiences. She values:
+    </p>
+    
+    <div class="accordion" id="accordion">
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header merienda-font">
+          <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            <strong>Creativity</strong>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body montserrat-font">
+            
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8">
+                  Jenna loves experimenting with flavors and techniques, always seeking new ways to express herself through food-even when inspiration feels elusive.
+                </div>
+                
+                <div class="col-md-4">
+                  <!-- Image-->
+                  <a href="https://imgbb.com/"><img src="https://i.ibb.co/XxmxkNHD/m530-Qo-D3-Sp6-TB2-Pp-AS.webp" alt="m530-Qo-D3-Sp6-TB2-Pp-AS" border="0"></a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header merienda-font">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            <strong>Connection</strong>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body montserrat-font">
+            <div class="container">
+              
+              <div class="row">
+                <div class="col-md-8">
+                  Jenna believes food is a way to bring people together, whether through sharing recipes online or sparking new ideas for fellow home cooks.
+                </div>
+                
+                <div class="col-md-4">
+                  <!-- Image-->
+                  <a href="https://imgbb.com/"><img src="https://i.ibb.co/ycCStKK5/8-Amd-ROb-WUZ9-JPROp-Yq.webp" alt="8-Amd-ROb-WUZ9-JPROp-Yq" border="0"></a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+         <h2 class="accordion-header merienda-font">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            <strong>Honesty</strong>
+          </button>
+        </h2>
+         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body montserrat-font">
+            
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8">
+                  She openly admits the challenges of coming up with dishes from scratch, embracing both the triumphs and struggles of the creative process.
+                </div>
+                
+                <div class="col-md-4">
+                  <!-- Image-->
+                  <a href="https://imgbb.com/"><img src="https://i.ibb.co/4wbfW1fq/TCU5-GQ9bc8e-QT565ou.webp" alt="TCU5-GQ9bc8e-QT565ou" border="0"></a>
+                </div>
+              </div>
+            </div>
+            
+           </div>
+        </div>
+      </div>
+
+        <div class="accordion-item">
+         <h2 class="accordion-header merienda-font">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+            <strong>Joy</strong>
+          </button>
+        </h2>
+         <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+          <div class="accordion-body montserrat-font">
+            
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8">
+                  Cooking is not just a hobby for Jenna-it’s a source of happiness and fulfillment, and she hopes to spread that joy to others through her website.
+                </div>
+                
+                <div class="col-md-4">
+                  <!-- Image-->
+                  <a href="https://imgbb.com/"><img src="https://i.ibb.co/67Q4fFt8/Q0-Vbi-Ou-VZ4-IFv-KQSm0.webp" alt="Q0-Vbi-Ou-VZ4-IFv-KQSm0" border="0"></a>
+                </div>
+              </div>
+            </div>
+            
+           </div>
+        </div>
+      </div>
+
+      
+    </div>    
+  </section>
+    
+    <!-- Slogan Section -->
+  <section id="slogan">
+    <h2 class="merienda-font"><i>Never hesitate to keep learning, trying, and tasting, especially when it comes to food!</i>
+    </h2>
+    <p class="montserrat-font" style="font-size: 21px;">
+      By Jenna Miller
+    </p>
+    <div class="right">
+      <a href="/aboutpage/about.html" class="stretched-link" aria-label="Recipes"><p class="montserrat-font space-below" style="color: blue; font-weight: none; text-decoration: none;">Learn more</p></a>
+    </div>
+  </section>
+    
+    <!-- Icons Section MARIA -->
+  <section id="icons">
+    <h1 class="merienda-font">
+      Continue Your Culinary Journey
+    </h1>
+    <p class="montserrat-font" style="font-size: 20px;">
+      Interested in further immersing yourself in Jenna's world and the adventures that await you?
+We encourage you to keep discovering Jenna's Recipes Book by:
+    </p>
+    
+    <div class="container space-above">
+    <div class="row justify-content-center g-4">
+      
+      <!-- About -->
+      <div id="card-one" class="col-12 col-md-4"> 
+        <a href="/aboutpage/about.html" class="stretched-link text-decoration-none text-dark" aria-label="About">
+        <div class="icon-card shadow-sm h-100">
+          <div class="icon-bg"></div>
+          <h4 class="merienda-font">About</h4>
+          <i class="fi-xnsuxl-user-solid icon"></i>
+          <p class="montserrat-font">Discovering the person behind the magic, Jenna; The great and amazing cook who inspired this website</p>
+        </div>
+        </a>
+      </div>
+      
+      <!-- Recipes -->
+      <div id="card-two" class="col-12 col-md-4">
+        <a href="/recipespage/recipes.html" class="stretched-link text-decoration-none text-dark" aria-label="Recipes">
+        <div class="icon-card shadow-sm h-100">
+          <div class="icon-bg"></div>
+          <h4 class="merienda-font">Recipes</h4>
+          <i class="fi-xnsuxl-dot-restaurant icon"></i>
+          <p class="montserrat-font">Exploring a splendid collection of delicious and creative recipes. Plus researching recipes by ingredients!</p>
+        </div>
+        </a>
+      </div>
+      
+      <!-- Favorites -->
+      <div id="card-three" class="col-12 col-md-4">
+        <a href="/aboutpage/about.html#favorites" class="stretched-link text-decoration-none text-dark" aria-label="Favorites">
+        <div class="icon-card shadow-sm h-100">        
+          <div class="icon-bg"></div>
+          <h4 class="merienda-font">Favorites</h4>
+          <i class="fi-xnsuxl-exclamation-mark-rounded icon"></i>
+          <p class="montserrat-font">Discovering Jenna's favorites recipes. Inspire yourself by Jenna excellent taste and the voice of experience.</p>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+    
+  </section>
+    
+    <!-- Footer Section -->
+    <section id="footer" class="d-flex align-items-center text-white py-5">
+      <div class="container">
+        <div class="row">
+          
+          <div id="contact" class="col-md-4">
+            <h4 style="padding-bottom: 1rem;">Contact Jenna</h4>
+            <div class="display-flex">
+              <i class="fi-xwluxl-map-marker-wide icon-footer"></i>
+              <p>123 Recipe Lane, Flavor Town, FT 54321</p>
+            </div>
+            
+            <div class="display-flex">
+              <i class="fi-xwlrxl-phone-wide icon-footer"></i>
+              <p>Phone: (123) 456-7890</p>
+            </div>
+            
+            <div class="display-flex">
+              <i class="fi-xwluxl-envelope-wide icon-footer"></i>
+              <p>Email: jenna@recipes.com</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <h4 style="padding-bottom: 1rem;">Newsletter</h4>
+              <form action="https://formspree.io/f/xkgrndkz" method="POST">
+                <div class="mb-3">
+                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                <textarea name="message" class="form-control" placeholder="Optional message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-footer">Subscribe</button>
+              </form>
+          </div>
+        
+          <div class="col-md-4" style="padding-left: 1.5rem;">
+            <h4 style="padding-bottom: 1rem;">Follow Jenna</h4>
+            <a href="https://www.instagram.com/best.recipes122/" class="text-white me-3"><i class="fi-xnsuxl-instagram icon-sm"></i></a>
+            <a href="https://www.facebook.com/" class="text-white me-3"><i class="fi-snsuxl-facebook icon-sm"></i></a>
+            <a href="https://www.pinterest.com/ideas/" class="text-white"><i class="fi-xnsuxl-pinterest icon-sm"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <!-- icons -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

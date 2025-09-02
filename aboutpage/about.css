@@ -1,0 +1,192 @@
+/* Color Palette */
+/* orange: c=F1BA88 */
+/* light yellow/green (lightest color): E9F5BE */
+/* light green: 81E7AF */
+/* green (darkest color): 03A791 */
+
+/* default to border-box */
+
+/* * {
+  border: 2px solid red;
+  margin: 0px;
+  padding: 0px;
+} */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#header-about {
+  text-align: center;
+}
+
+#header-about h1 {
+  padding-top: 2.7rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+#header-about p {
+  font-size: 2rem;
+}
+
+/* Remove header image placeholder */
+header img {
+  display: none;
+}
+
+section#jenna {
+  /* background-color: #03A791; */
+  text-align: center;
+}
+
+section#jenna h1 {
+  padding-bottom: 10px;
+}
+
+section#jenna p {
+  font-size: 24px;
+}
+
+section#favorites {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+section#favorites h1 {
+  padding-top: 4rem;
+}
+
+section#favorites h5 {
+  font-weight: bold;
+}
+
+.card-favorites:hover {
+  border: 6px solid #8dcada;
+}
+
+.btn-footer {
+  background-color: lightblue !important;
+  color: white;
+}
+
+.btn-footer:hover {
+  background-color: #3692b0 !important;
+  color: white;
+}
+
+/* Animate Jenna’s Favorite Recipes */
+.moving-title {
+  animation: slide 3s infinite alternate ease-in-out;
+  display: inline-block;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}
+
+.jennaHs {
+  max-width: 100%;
+  border-radius: 50%;
+  border: 7px solid #E9F5BE;
+}
+
+/* Meet Jenna side layout fix */
+@media (min-width: 768px) {
+  .jenna-layout {
+      display: flex;
+      align-items: center;
+  }
+
+  .jenna-layout .text {
+      padding-left: 2rem;
+  }
+}
+
+.underline:hover {
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+.recipe-img {
+  transition: transform 0.3s ease;
+}
+
+.recipe-img:hover {
+  transform: scale(1.05);
+}
+
+.merienda-font {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+section#footer {
+  background-color: #F1BA88;
+}
+
+section#footer h4 {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+section#footer div {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+section#footer p {
+  font-size: 18px;
+}
+
+.icon-footer {
+  font-size: 25px; 
+  padding-right: 10px;
+}
+
+.icon-sm {
+  font-size: 35px;
+}
+
+.display-flex {
+  display: flex;
+}
